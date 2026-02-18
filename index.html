@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofy Price | Официальная анкета</title>
+    <title>Dasha | Официальная анкета</title>
     <!-- Подключаем шрифт Google Fonts для современного вида -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +29,6 @@
             --accent-gold-dim: #b8960c;
             --card-radius: 28px;
             --blur-amount: 16px;
-            --verified-badge-bg: rgba(212, 175, 55, 0.18);
-            --verified-badge-border: rgba(212, 175, 55, 0.3);
         }
 
         body {
@@ -126,18 +124,18 @@
             margin-bottom: 8px;
         }
 
-        /* === УЛУЧШЕННЫЙ БЕЙДЖ С ГАЛОЧКОЙ === */
+        /* ОБНОВЛЕННЫЙ БЕЙДЖ С ГАЛОЧКОЙ (как у Sofy) */
         .badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--verified-badge-bg);
+            background: rgba(212, 175, 55, 0.18);
             color: var(--accent-gold);
             font-weight: 600;
             font-size: 0.95rem;
             padding: 6px 16px 6px 12px;
             border-radius: 40px;
-            border: 1px solid var(--verified-badge-border);
+            border: 1px solid rgba(212, 175, 55, 0.3);
             margin-bottom: 20px;
             backdrop-filter: blur(5px);
             box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
@@ -363,15 +361,11 @@
             <!-- Левая часть с фото (ЗАМЕНИТЕ src НА ВАШЕ ФОТО) -->
             <div class="photo-section" style="margin: 0;">
                 <!--
-                    ⚠️ ИНСТРУКЦИЯ: Замените ссылку на фото:
-                    1. Загрузите фото на ImgBB
-                    2. Получите ПРЯМУЮ ссылку (заканчивается на .jpg)
-                    3. Вставьте её между кавычек src="..."
-                    
-                    Пример правильной ссылки: https://i.ibb.co/6J4fJXtf/photo.jpg
+                    ⚠️ ИНСТРУКЦИЯ: Замените текст "sofy.jpg" на путь к вашему изображению.
+                    Можно использовать картинку из интернета (https://...), либо положить файл в ту же папку.
                 -->
-                <img src="https://via.placeholder.com/600x800/1e1e1e/d4af37?text=Sofy+Price" 
-                     alt="Sofy Price" 
+                <img src="sofy.jpg" 
+                     alt="Dasha" 
                      class="profile-photo"
                      id="profileImage"
                      onerror="this.onerror=null; this.src=''; this.classList.add('photo-placeholder'); this.outerHTML='<div class=\'photo-placeholder\'><div style=\'text-align:center\'><i class=\'fas fa-camera\'></i><br>Вставьте фото<br><span style=\'font-size:0.8rem\'>(замените src)</span></div></div>';">
@@ -379,11 +373,11 @@
 
             <!-- Краткая информация справа -->
             <div class="info-summary">
-                <!-- БЕЙДЖ С ГАЛОЧКОЙ (теперь иконка отдельно) -->
+                <!-- БЕЙДЖ С ОТДЕЛЬНОЙ ГАЛОЧКОЙ (как просили) -->
                 <span class="badge">
                     <i class="fas fa-check-circle"></i> Verified Model
                 </span>
-                <h1 class="name">Sofy Price</h1>
+                <h1 class="name">Dasha</h1>
                 <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 16px;">
                     <span><i class="fas fa-map-pin" style="color: var(--accent-gold); margin-right: 6px;"></i> Kiev / Dubai</span>
                     <span><i class="fas fa-globe" style="color: var(--accent-gold); margin-right: 6px;"></i> Ukrainian, English, Russian</span>
@@ -394,25 +388,25 @@
                 <div class="stats-grid">
                     <div class="stat-item">
                         <span class="stat-label">Рост</span>
-                        <span class="stat-value">175 <small>cm</small></span>
+                        <span class="stat-value">171 <small>cm</small></span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Вес</span>
-                        <span class="stat-value">52 <small>kg</small></span>
+                        <span class="stat-value">56 <small>kg</small></span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Возраст</span>
-                        <span class="stat-value">23</span>
+                        <span class="stat-value">26</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Грудь</span>
-                        <span class="stat-value">3 <small>size</small></span>
+                        <span class="stat-value">3,5 <small>size</small></span>
                     </div>
                 </div>
 
                 <!-- Кнопки действий: только Telegram (золотая) -->
                 <div class="action-buttons">
-                    <button class="btn btn-primary" onclick="window.open('https://t.me/SofyPriceVIP', '_blank')">
+                    <button class="btn btn-primary" onclick="window.open('https://t.me/dasha_teplo', '_blank')">
                         <i class="fab fa-telegram-plane"></i> Написать в Telegram
                     </button>
                 </div>
@@ -427,7 +421,7 @@
             </div>
             <div class="bio-text">
                 <!-- ВСТАВЬТЕ СВОЙ ТЕКСТ БИОГРАФИИ -->
-                Меня зовут Софи, я родилась в Украине, но большую часть времени провожу в путешествиях. 
+                Меня зовут Даша, я родилась в Украине, но большую часть времени провожу в путешествиях. 
                 Образование — лингвист, свободно говорю на английском, украинском и русском. 
                 Обожаю современное искусство, яхтинг и хорошую кухню. 
                 В эскорте я ценю интеллектуальное общение и комфорт. 
@@ -444,11 +438,11 @@
             </div>
 
             <div class="details-grid">
-                <!-- Параметры тела -->
+                <!-- Параметры тела (исправлены на данные Dasha) -->
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-ruler-vertical"></i></div>
                     <div class="detail-label">Рост / Вес</div>
-                    <div class="detail-value">175 см / 52 кг</div>
+                    <div class="detail-value">171 см / 56 кг</div>
                 </div>
                 <div class="detail-card">
                     <div class="detail-icon"><i class="fas fa-weight-scale"></i></div>
@@ -512,8 +506,8 @@
         <div class="glass-card" style="padding: 32px; text-align: center; background: rgba(30,30,30,0.7);">
             <h3 style="font-weight: 400; margin-bottom: 24px;">Для связи со мной</h3>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://t.me/SofyPriceVIP" target="_blank" class="btn btn-primary" style="gap: 12px; background: #d4af37; color: black; text-decoration: none;">
-                    <i class="fab fa-telegram-plane"></i> @SofyPriceVIP
+                <a href="https://t.me/dasha_teplo" target="_blank" class="btn btn-primary" style="gap: 12px; background: #d4af37; color: black; text-decoration: none;">
+                    <i class="fab fa-telegram-plane"></i> @dasha_teplo
                 </a>
             </div>
             <p style="margin-top: 28px; color: #6f6f6f; font-size: 0.85rem;">Telegram — предпочтительный способ связи. Отвечаю быстро, конфиденциально.</p>
@@ -521,7 +515,7 @@
 
         <!-- Подвал (просто для красоты) -->
         <div class="footer-note">
-            <span>Sofy Price — Official Profile © 2025 | Все права защищены</span>
+            <span>Dasha Teplo — Official Profile © 2025 | Все права защищены</span>
         </div>
     </div>
 
@@ -531,7 +525,7 @@
             // Простое напоминание для пользователя заменить фото (можно удалить)
             const img = document.getElementById('profileImage');
             if (img && img.src.includes('via.placeholder.com')) {
-                console.log('📸 Не забудьте заменить фото Sofy! Укажите правильный путь в атрибуте src тега <img>.');
+                console.log('📸 Не забудьте заменить фото Dasha! Укажите правильный путь в атрибуте src тега <img>.');
             }
         })();
     </script>
